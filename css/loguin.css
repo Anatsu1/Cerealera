@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap%27');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(200deg,
+    rgb(248, 179, 28),rgb(248, 179, 28),rgb(255, 255, 255),rgb(255, 255, 255));
+    background-size: 500%;
+    animation: animacion 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes animacion{
+    0%{
+        background-position: 0% 25%;
+    }
+    25%{
+        background-position: 25% 50%;
+    }
+    50%{
+        background-position: 50% 75%;
+    }
+    75%{
+        background-position:75% 100%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+
+form{
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+.login{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.container{
+    margin-top: 3em;
+    display:grid;
+    gap: 2.5em;
+}
+.grupo{
+    position: relative;
+    color: #000000;
+}
+.form_input{
+    width: 100%;
+    background: none;
+    color: #000000;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+    font-family: 'Poppins', sans-serif;
+}
+.form_label{
+    color: #00000075;
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+button{
+    background-color: rgb(248, 179, 28);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+button:hover{
+    color:black;
+}
+@media(min-width:400px) and (max-width:600px){
+    form{
+        margin: 10px auto;
+    }
+    button:hover{
+        color: #000000;
+    }
+} 
+
+
